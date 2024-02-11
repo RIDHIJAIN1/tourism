@@ -1,0 +1,108 @@
+body{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo-image img{
+    max-width: 70px;
+    border-radius: 50px;
+}
+
+.custom-navbar{
+  background: none;
+  border: none;
+  /* position: absolute; */
+}
+
+.nav-link{
+    color: white !important;
+    font-family: "Playfair Display", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.navbar-brand{
+    color: white !important;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.dropdown-menu{
+    background-color: aliceblue!important;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+button{
+    font-family: "Playfair Display", serif !important;
+}
+
+.heading-image {
+    background-image: url(images/pexels-aleksandar-pasaric-2341830.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+  
+}
+
+.heading{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+.heading h1{
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.heading h2{
+
+    font-weight: bold;
+}
+
+#changename::after{
+    content: "";
+    animation-name: changetext;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.book-button{
+    padding: 2px 8px;
+    font-weight: bold;
+    margin: 2px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+@keyframes changetext
+{
+    0%{
+        content: "PARIS";
+    }
+
+     25%{
+        content: "FRANCE";
+     }
+     50%{
+        content: "HONKONG";
+     }
+     75%{
+        content: "BRAZIL";
+     }
+     100%{
+        content: "MALAYSIA";
+     }
+}
+
+
+
