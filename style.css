@@ -369,6 +369,10 @@ button{
   width: 100%;
   padding: 10px;
   }
+  .hex {
+    width: 100%; 
+    max-width: 240px; 
+  }
 }
 @media (max-width:768px) {
   .hex {
