@@ -85,13 +85,16 @@
         <form id="bookingForm"onsubmit="submitForm(event)">
           <div class="form-group">
             
-              <select class="form-control" id="whereTo" required>
-                  <option value="">Choose Your Favourite Destination</option>
-                  <option value="Place1">United State</option>
-                  <option value="Place2">India</option>
-                  <option value="Place3">France</option>
-                  <option value="Place4">Germany</option>
-              </select>
+            <input type="text" list="destinations" class="form-control" id="whereTo" placeholder="Choose or type your destination">
+            <datalist id="destinations">
+                <option value="United States">
+                <option value="India">
+                <option value="France">
+                <option value="Germany">
+              
+            </datalist>
+            
+          
           </div>
           <div class="form-group">
               <input type="number" class="form-control" placeholder="Number of persons" required min = "1">
