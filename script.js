@@ -40,7 +40,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function submitForm(event) {
+  // Prevent the default form submission
+  event.preventDefault();
 
+  // Reset all form fields
+  document.getElementById("whereTo").selectedIndex = 0; // Reset dropdown to the default option
+  document.getElementById("startDate").value = ""; // Clear the start date
+  document.getElementById("endDate").value = ""; // Clear the end date
+  document.getElementById("description").value = ""; // Clear the description
+  document.querySelector("#bookingForm input[type='number']").value = ""; // Clear the number input
+  
+  // Optionally, if you have other input types like text, you can clear them similarly
+
+  // Focus on the first input field after reset (optional)
+  document.getElementById("whereTo").focus();
+}
 document.addEventListener("scroll", function() {
   var cards = document.querySelectorAll(".card");
 
