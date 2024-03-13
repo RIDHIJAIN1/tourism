@@ -55,10 +55,68 @@
                 <a class="nav-link" href="#">About</a>
               </li>
             </ul>
-            <button type="button" class="btn btn-light me-1 ms-1 px-2 py-1">Login</button>
-            <button type="button" class="btn btn-light me-1 ms-1 px-2 py-1">Sign Up</button>
+            <button type="button" class="btn btn-light me-1 ms-1 px-2 py-1"data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+            <button type="button" class="btn btn-light me-1 ms-1 px-2 py-1"data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign Up</button>
         </div>
       </nav>
+
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Register Now</h1>
+             
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="name" class="name">Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Email">
+              </div>
+              <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="formGroupExampleInput3" placeholder="Password">
+              </div>
+              <div class="mb-3">
+                <label for="Password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="formGroupExampleInput3" placeholder="Confirm Password">
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary footer-button" data-bs-dismiss="modal">Register</button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+             
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Email">
+              </div>
+              <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="formGroupExampleInput3" placeholder="Password">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary footer-button" data-bs-dismiss="modal">Login</button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="heading">
         <h2 class="fs-1 ">WELCOME TO GLOBEGLIDE</h2>
         <h1 class="fs-1 fw-bolder">VISIT <span id="changename"></span></h1>
@@ -127,7 +185,7 @@
 
     <div class="tourism-gallery">
       <div class="container">
-        <h1>Gallery</h1>
+        <h1>PACKAGES</h1>
         <div class="row">
           <div class="col-md-4">
             <div class="card">
@@ -227,7 +285,7 @@
     <div class="services-section">
       <div class="container">
         <div class="service-heading">
-          <h1>Services</h1>
+          <h1>SERVICES</h1>
         </div>
       
       <section class="hexagon-gallery">
@@ -284,6 +342,169 @@
       </section>
     </div>
     </div>
+
+    <!-- ---------------------------------gallery---------------------------------- -->
+    <div class="imagecontainer">
+   
+      <div class="photo-heading">
+        <h1>GALLERY</h1>
+      </div>
+      <div class="mycontainer">
+        <div class="row gallery-row">
+       <div class="col-md-3 col-sm-6 col-xs-12" >
+         <div class="shot">
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="myimage">
+            <img src="images/tour2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12" >
+         <div class="shot">
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="myimage">
+            <img src="images/tour3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12" >
+         <div class="shot">
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="myimage">
+            <img src="images/tor5 (3).jpg" alt="">
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12" >
+         <div class="shot">
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="myimage">
+            <img src="images/tour.jpg" alt="">
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12" >
+         <div class="shot">
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="myimage">
+            <img src="images/tour7.jpg" alt="">
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12" >
+         <div class="shot">
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="myimage">
+            <img src="images/tour8.jpg" alt="">
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12" >
+         <div class="shot">
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="myimage">
+            <img src="images/tour4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12" >
+         <div class="shot">
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="myimage">
+            <img src="images/t6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      </div>
+    
+      
+    </div>
+  </div>
+
+  <!-- -----------------------------aboutus----------------------------- -->
+  <section class="about">
+    <div class="container">
+      <div class="about-heading">
+        <h1>ABOUT</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="about-content">
+          <h4>About Us</h4>
+          <p>GlobeGlide is a premier provider of bespoke tourism packages, offering unforgettable travel experiences to destinations around the world. Since our establishment in 2010, we have been dedicated to curating immersive and memorable adventures that cater to the diverse interests and preferences of our clients.</p>
+          <br>
+          <h4>Mission Statement</h4>
+          <p>Our mission at GlobeGlide is to inspire exploration, foster cultural exchange, and create lifelong memories through exceptional travel experiences. We are committed to delivering personalized service, unparalleled expertise, and unparalleled value to our clients.</p>
+        </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="aboutImage">
+            <img src="images/A travel brand  e1f19ca9-1638-48fc-a278-7aded199b265.png" alt="">
+          </div>
+          <div class="companyImage">
+            <!-- <div class="imageconatiner">
+            </div> -->
+            <img src="images/GLOBE.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ----------------------footer---------------------------------- -->
+  <div class="footer">
+
+      <div class="social-links">  
+        <div class="social-media"> 
+      <div class="link">
+        <a href="/"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <div class="link">
+        <a href="/"><i class="fa-brands fa-instagram"></i></a>     
+      </div>
+      <div class="link">
+        <a href="/"><i class="fa-brands fa-x-twitter"></i></a>   
+      </div>
+      <div class="link">
+        <a href="/"><i class="fa-brands fa-linkedin"></i> </a> 
+      </div>
+      </div>
+   
+    </div>  
+    <div class="line"></div> 
+
+    <div class="copyright">
+      <h6>Copyright<i class="fa-regular fa-copyright"></i>2024. GlobeGlide.com</h6>
+      <h6>All rights reserved</h6>
+    </div>
+  </div>
 
 </body>
 
