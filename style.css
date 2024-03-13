@@ -631,6 +631,15 @@ margin: auto;
     font-size: 40px;
    
   }
+  .hex:hover .hex-icon{
+    transform: scale(1);
+    transition: 1s ease;
+  }
+
+
+  .companyImage img{
+    display: none;
+  }
 
   .aboutImage img {
     width: 100%;
