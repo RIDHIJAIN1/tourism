@@ -62,3 +62,103 @@ document.addEventListener("scroll", function() {
     }
   });
 });
+
+function validationForm(){
+    var email = document.getElementById("email2").value;
+    var password = document.getElementById("password2").value;
+
+    var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    var errors = [];
+
+    console.log("its working")
+    console.log("its working")
+
+
+    if(!regexEmail.test(email)){
+        errors.push("Enter a valid email address")
+    }
+
+    if(password.length<6){
+        errors.push("Password must be at least 6 characters long")
+    }
+
+    if (errors.length > 0) {
+        var errorList = "<ul>";
+        errors.forEach(function(error) {
+            errorList += "<li style ='color:red;list-style:none;'> "+  error + "</li>";
+        });
+        errorList += "</ul>";
+  
+        document.getElementById("validationError").innerHTML = errorList;
+    } else {
+        
+      var myModal = document.getElementById('exampleModal');
+      var modalInstance = bootstrap.Modal.getInstance(myModal);
+      modalInstance.hide();
+      resetForms();
+    }
+}
+
+
+function validateForm() {
+  var fullname = document.getElementById("fullname").value;
+  var contact = document.getElementById("contact").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var dob = document.getElementById("dob").value;
+  var gender = document.getElementById("gender").value;
+
+  var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  var errors = [];
+
+  if (fullname.trim() == "") {
+      errors.push("Please enter your full name.");
+  }
+
+  if (contact === ""|| isNaN(contact)) {
+      errors.push("Please enter a valid contact number.");
+  }
+
+  if (!regexEmail.test(email)) {
+      errors.push("Please enter a valid email address");
+  }
+
+  if (password.length< 6 ){
+      errors.push("Password must be at least 6 characters long");
+  }
+
+  if (dob === "") {
+      errors.push("Please enter your date of birth.");
+  }
+
+  if (gender === "") {
+      errors.push("Please select your gender.");
+  }
+
+  if (errors.length > 0) {
+      var errorList = "<ul>";
+      errors.forEach(function(error) {
+          errorList += "<li style ='color:red;list-style:none;'> "+  error + "</li>";
+      });
+      errorList += "</ul>";
+
+      document.getElementById("validationErrors").innerHTML = errorList;
+  } else {
+      
+    var myModal = document.getElementById('exampleModal1');
+    var modalInstance = bootstrap.Modal.getInstance(myModal);
+    modalInstance.hide();
+    resetForm();
+  }
+}
+
+function resetForm(){
+    document.getElementById("registrationForm").reset();
+    document.getElementById("validationErrors").innerHTML = "";
+}
+function resetForms(){
+    document.getElementById("loginForm").reset();
+    document.getElementById("validationError").innerHTML = "";
+}

@@ -57,6 +57,13 @@ button{
 
 .modal-footer{
   margin: auto;
+  display: block !important;
+  text-align: center !important;
+}
+
+.modal-footer span{
+  cursor: pointer;
+  color: green;
 }
 
 .modal-header{

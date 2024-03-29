@@ -62,37 +62,51 @@
 
       <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Register Now</h1>
-             
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Register Now</h1>
+                </div>
+                <div class="modal-body">
+                    <form id="registrationForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="fullname" placeholder="Enter Your FullName">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="contact" placeholder="Enter Your Contact">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <label style="padding: 10px;" for="dob">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob" placeholder="Date of Birth">
+                        </div>
+                        <div class="mb-3">
+                            <label style="padding: 10px;" for="gender">Gender:</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div id="validationErrors"></div> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary footer-button" onclick="validateForm()">Register</button>
+                   
+                    <p>Already have an account? <span data-bs-toggle="modal" data-bs-target="#exampleModal">Login</span></p>
+                </div>
             </div>
-            <div class="modal-body">
-              <div class="mb-3">
-                <label for="name" class="name">Name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Name">
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Email">
-              </div>
-              <div class="mb-3">
-                <label for="Password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="formGroupExampleInput3" placeholder="Password">
-              </div>
-              <div class="mb-3">
-                <label for="Password" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="formGroupExampleInput3" placeholder="Confirm Password">
-              </div>
-              
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary footer-button" data-bs-dismiss="modal">Register</button>
-            
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+    
+ 
+    
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -101,17 +115,22 @@
              
             </div>
             <div class="modal-body">
+              <form id = "loginForm">
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Email">
+                <input type="email" class="form-control" id="email2" placeholder="Enter Your Email">
               </div>
               <div class="mb-3">
                 <label for="Password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="formGroupExampleInput3" placeholder="Password">
+                <input type="password" class="form-control" id="password2" placeholder="Password">
               </div>
+            </form>
+              <div id="validationError"></div> 
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary footer-button" data-bs-dismiss="modal">Login</button>
+              <button type="button" class="btn btn-secondary footer-button" onclick="validationForm()">Login</button>
+              <br>
+              <p>New user? <span data-bs-toggle="modal" data-bs-target="#exampleModal1"> Register</span></p>
             
             </div>
           </div>
