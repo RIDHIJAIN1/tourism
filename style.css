@@ -610,6 +610,10 @@ margin: auto;
   
 }
 
+.hexagonal-gallery2{
+  display: none;
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
@@ -623,6 +627,29 @@ margin: auto;
   }
 }
 @media (max-width:768px) {
+
+  .hexagonal-gallery2{
+    display: block;
+  }
+
+  .hexagon-gallery{
+    display: none;
+  }
+
+  .service-icon{
+    text-align: center;
+    
+
+  }
+
+  .service-icon i{
+    font-size: 50px;
+    padding: 20px;
+    transition: .4s ease-in;
+  }
+  .service-icon i:hover{
+    transform: scale(1.2);
+  }
   .hex {
     width: 100%; 
     max-width: 240px; 

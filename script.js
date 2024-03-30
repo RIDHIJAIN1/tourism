@@ -162,3 +162,4 @@ function resetForms(){
     document.getElementById("loginForm").reset();
     document.getElementById("validationError").innerHTML = "";
 }
+
